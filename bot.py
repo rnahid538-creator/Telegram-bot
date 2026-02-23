@@ -70,7 +70,7 @@ async def handle_payment(message: types.Message):
 @dp.callback_query_handler(lambda c: c.data.startswith('approve_'))
 async def approve_user(callback_query: types.CallbackQuery):
     user_id = callback_query.data.split('_')[1]
-    group_link = "https://t.me/+YOUR_PRIVATE_LINK" # আপনার গ্রুপের ইনভাইট লিংক
+    group_link = "https://t.me/+eiFGZcO3yRk5MjVl" # আপনার গ্রুপের ইনভাইট লিংক
     
     await bot.send_message(user_id, f"🎉 আপনার পেমেন্ট অ্যাপ্রুভ হয়েছে!\nনিচের লিংকে ক্লিক করে গ্রুপে জয়েন করুন:\n{group_link}")
     await bot.answer_callback_query(callback_query.id, "ইউজারকে লিংক পাঠানো হয়েছে!")
